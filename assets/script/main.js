@@ -39,7 +39,7 @@ function toggleDetailPanel() {
     const popUpMenuContainer = document.querySelector('#open-popup')
 
     // console.log(scrollState.top);
-    if (scrollState.top === 38.390625) {
+    if (scrollState.top < 38.390625) {
         buttonContainer.style.display = 'block'
         popUpMenuContainer.style.display = 'none'
     } else {
