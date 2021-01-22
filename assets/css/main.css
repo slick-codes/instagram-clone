@@ -207,7 +207,7 @@ main nav{
 	grid-template-columns:1fr 1fr 1fr 1fr;
 	padding:0;
 	position:sticky;
-	top:2.4em;
+	top:2em;
 	background:var(--background-color);
 }
 
