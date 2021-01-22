@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>webpack practice</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="details_panel">
+        <ul>
+            <li><i class="fa fa-arrow-left"></i></li>
+            <li>cuppymusic</li>
+            <li> <i class="fa fa-check-circle"></i></li>
+        </ul>
+        <ul>
+            <li id="open-popup"> <i class="fa fa-ellipsis-v"></i> </li>
+            <li><button class="follow-button">follow</button></li>
+        </ul>
+    </div>
+    <div class="pop_up-menu" data-type="pop_up-menu">
+        <ul class="pop_up">
+            <li>Report..</li>
+            <li>Block</li>
+            <li>About This Account</li>
+            <li>Restrict</li>
+            <li>Hide Your Story</li>
+            <li>copy Profile URL</li>
+            <li>Share this Profile</li>
+        </ul>
+    </div>
+    <header>
+        <div class="status_info">
+            <div class="profile_image">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+            <div class="status">
+                <div class="status__posts">
+                    <div>4,259</div>
+                    <label>Posts</label>
+                </div>
+                <div class="status__followers">
+                    <div>6.8M</div>
+                    <label>Followers</label>
+                </div>
+                <div class="activity-status__following">
+                    <div>291</div>
+                    <label>Following</label>
+                </div>
+            </div>
+        </div>
+        <div class="bio">
+            <p>
+                Cuppy <br>
+                <i class="fa fa-star-o" style="color:gray;"></i> &nbsp;DJ, Artist, & Philanthropist <br>
+                <i class="fa fa-star-o" style="color:gray;"></i> &nbsp;Host of <span>#AfricaNow on Apple Music</span> <br>
+                <i class="fa fa-star-o" style="color:gray;"></i> &nbsp;Founder of <span>@CuppyFoudation</span> <br>
+                <span>youtu.be/Xg-GUJRnPWQ</span> <br>
+                Followed by <b>real_adaeze1. mc_willams12 and 30 others</b>
+        </div>
+        <section>
+            <div class="buttons-container">
+                <button class="active">Follow</button>
+                <button>Message</button>
+                <button>Email</button>
+                <button> <i class="fa fa-angle-down"></i> </button>
+            </div>
+        </section>
+        <div class="icons">
+        </div>
+    </header>
+    <main>
+        <nav>
+            <button data-action="post" class="active"> <i class="fa fa-table"></i> </button>
+            <button data-action="video"> <i class="fa fa-television"></i> </button>
+            <button data-action="funny-video"> <i class="fa fa-smile-o"></i></button>
+            <button data-action="tag_post"> <i class="fa fa-user"></i></button>
+        </nav>
+        <div class="post_container post_section" data-section-type="post">
+
+        </div>
+        <div class="series_popup" data-type="pop_up-menu">
+            <div class="series">
+                <span></span>
+                <b>Series</b>
+                <hr>
+                <div>
+                    <ul>
+                        <li>Interview</li>
+                        <li> <i class="fa fa-angle-right"></i> </li>
+                    </ul>
+                    <ul>
+                        <li>Cuppy DJ&nbsp;Sets</li>
+                        <li> <i class="fa fa-angle-right"></i> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="video_container disabled post_section" data-section-type="video">
+            <div class="video__collaps">
+                <button class="seriesButton">Series <i class="fa fa-caret-down"></i> </button>
+            </div>
+            <div class="video_inner-container">
+                
+            </div>
+        </div>
+        <div class="funny_container disabled post_section" data-section-type="funny-video"></div>
+        <div class="tag-post_container disabled post_section" data-section-type="tag_post">
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <li>
+                <i class="fa fa-home"></i>
+            </li>
+            <li>
+                <i class="fa fa-search"></i>
+            </li>
+            <li>
+                <i class="fa fa-plus-square-o"></i>
+            </li>
+            <li>
+                <i class="fa fa-heart-o"></i>
+            </li>
+            <li>
+                <img src="assets/img/paul-o.png" alt="">
+            </li>
+        </nav>
+    </footer>
+    <script src="module/post_section.js"></script>
+    <script src="assets/script/main.js"></script>
+    <script src="assets/module/post_section.js"></script>
+    <script src="assets/module/tag_section.js"></script>
+    <script src="assets/module/video_section.js"></script>
+    <script src="assets/module/funny_section.js"></script>
+    <script src="assets/module/icon.js"></script>
+</body>
+
+</html>
