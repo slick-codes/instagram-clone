@@ -1,4 +1,4 @@
-(function(){
+'use strict'
 	const iconData = () => {
 	return `
             <div class="icons__icon">
@@ -34,5 +34,5 @@
                 <label>Vlog</label>
             </div>`
 	}
-	document.querySelector('.icons').innerHTML = iconData()
-})()
+
+    export default 

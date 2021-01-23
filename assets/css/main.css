@@ -6,6 +6,7 @@
     display: flex;
     flex-flow: row;
     font-family: instagramFont;
+    position:-webkit-sticky;
     position:sticky;
     top:0;
     background:var(--background-color);
@@ -123,9 +124,9 @@
     font-family: instagramFont;
     font-weight: normal;
     font-size: 1rem;
-}
+} 
 .bio span{
-	color:#C6E4FF;
+	color:#BABABA;
 }
 
 section {
@@ -198,16 +199,20 @@ main{
 	padding:0.5em 0em;
 }
 main nav{
+	border-top:solid 1px #393939;
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	/*width:100%;*/
+	display: -ms-grid;
 	display: grid;
 	/*grid-template-rows:1fr 1fr 1fr 1fr;*/
+	-ms-grid-columns:1fr 1fr 1fr 1fr;
 	grid-template-columns:1fr 1fr 1fr 1fr;
 	padding:0;
+	position:-webkit-sticky;
 	position:sticky;
-	top:2em;
+	top:2.1em;
 	background:var(--background-color);
 }
 
@@ -238,8 +243,10 @@ main .post_container , .tag-post_container{
 	/*flex-wrap: wrap;*/
 	/*justify-content: flex-start;*/
 	align-items: center;
+	display:-ms-grid;
 	display:grid;
 	/*grid-template-rows:1fr 1fr 1fr;*/
+	-ms-grid-columns:auto auto auto;
 	grid-template-columns:auto auto auto;
 }
 
@@ -271,7 +278,9 @@ main .post_container , .tag-post_container{
 }
 
 .video_inner-container{
+	display:-ms-grid;
 	display:grid;
+	-ms-grid-columns:1fr 1fr;
 	grid-template-columns:1fr 1fr;
 }
 .disabled{
@@ -320,7 +329,15 @@ main .post_container , .tag-post_container{
 	align-items:center;
 	flex-flow:column;
 	padding-bottom:5em;
-	animation:top 0.2s linear;
+	-webkit-animation:top 0.2s linear;
+	        animation:top 0.2s linear;
+}
+@-webkit-keyframes top{
+	from{
+		transform:translateY(10em);
+	}to{
+		transform: translateY(0);
+	}
 }
 @keyframes top{
 	from{
@@ -351,6 +368,7 @@ hr{
 }
 .funny_container{
 	padding-top:0.3em;
+	-ms-grid-columns:1fr 1fr;
 	grid-template-columns:1fr 1fr;
 	grid-gap:0.1em;
 }
