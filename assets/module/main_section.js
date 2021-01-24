@@ -10,7 +10,7 @@
             <button data-action="funny-video"> <i class="fa fa-smile-o"></i></button>
             <button data-action="tag_post"> <i class="fa fa-user"></i></button>
         </nav>
-        <div class="post_container post_section" >
+        <div class="post_container post_section" data-section-type="post">
 <div class="post" style="background-image:url('https://images.unsplash.com/photo-1507065938252-17f453893fc3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80')"></div>
             <div class="post" style="background-image:url('assets/img/cover2.png')"></div>
             <div class="post" style="background-image:url('https://images.unsplash.com/flagged/photo-1579711739060-5c3a87cc56b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1002&q=80')"></div>
